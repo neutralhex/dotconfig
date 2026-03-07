@@ -1,9 +1,11 @@
+vim.g.lspconfig_disable_warning = true
 vim.o.expandtab = true
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.number = true
 vim.o.cursorline = true
+vim.o.wrap = true
 
 vim.g.have_nerd_font = true
 
@@ -24,7 +26,7 @@ end)
 vim.o.breakindent = true
 
 -- Save undo history
-vim.o.undofile = false
+vim.o.undofile = true
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.o.ignorecase = true
