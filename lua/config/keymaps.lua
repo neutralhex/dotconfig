@@ -34,4 +34,8 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("v", ">", ">gv", { noremap = true })
 vim.keymap.set("v", "<", "<gv", { noremap = true })
-vim.keymap.set("v", "<", "<gv", { noremap = true })
+
+vim.keymap.set({"n", "v"}, "d", [["d]], { noremap = true })
+
+
+
