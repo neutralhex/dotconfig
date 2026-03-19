@@ -19,3 +19,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
 vim.lsp.enable("clangd")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("gopls")
+vim.lsp.enable("zls")
+vim.lsp.enable("ols")

@@ -27,14 +27,12 @@ return {
         --
         -- See :h blink-cmp-config-keymap for defining your own keymap
         keymap = { 
-                preset = 'default',
+                preset = 'none',
 
-                ["J"] = {"select_next", "fallback"},
-                ["K"] = {"select_prev", "fallback"},
-                ["<CR>"] = {"select_prev", "fallback"},
-            },
-            
-
+                ["<Tab>"] = { "select_next", "snippet_forward", "fallback" },
+                ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
+                ["<CR>"] = { "accept", "fallback" },
+        },
         appearance = {
           -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
           -- Adjusts spacing to ensure icons are aligned
